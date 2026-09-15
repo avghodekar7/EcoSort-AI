@@ -1,0 +1,539 @@
+/* ================================
+   EcoSort AI - Complete CSS
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8f5;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ================================
+   Header
+   ================================ */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #166534;
+}
+
+/* ================================
+   Hero Section
+   ================================ */
+
+.hero {
+    text-align: center;
+    padding: 75px 20px 55px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero .eyebrow {
+    color: #15803d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    color: #14532d;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+    color: #64748b;
+}
+
+/* ================================
+   Main Container
+   ================================ */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ================================
+   Analyzer Card
+   ================================ */
+
+.analyzer-card {
+    background: #ffffff;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.analyzer-card > h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #14532d;
+    margin-bottom: 8px;
+}
+
+.analyzer-card > p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 28px;
+}
+
+/* ================================
+   Analysis Options
+   ================================ */
+
+.analysis-option {
+    background: #f8faf8;
+    border: 1px solid #e2e8e2;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 18px;
+}
+
+.analysis-option h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #166534;
+}
+
+/* ================================
+   Text Input
+   ================================ */
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd5d1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #ffffff;
+    margin-bottom: 12px;
+}
+
+input[type="text"]:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
+}
+
+/* ================================
+   File Input
+   ================================ */
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px dashed #a7b9aa;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ================================
+   Buttons
+   ================================ */
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    background: #166534;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #14532d;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   Examples
+   ================================ */
+
+.examples {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+    text-align: left !important;
+    font-size: 13px !important;
+    color: #64748b;
+}
+
+/* ================================
+   OR Divider
+   ================================ */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 22px 0;
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    background: #e2e8f0;
+    flex: 1;
+}
+
+.divider span {
+    padding: 0 5px;
+}
+
+/* ================================
+   Loading
+   ================================ */
+
+.loading {
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* ================================
+   Error
+   ================================ */
+
+.error {
+    margin-top: 20px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    font-size: 14px;
+}
+
+/* ================================
+   Hidden Utility
+   ================================ */
+
+.hidden {
+    display: none !important;
+}
+
+/* ================================
+   AI Result Card
+   ================================ */
+
+.result-card {
+    margin-top: 30px;
+    padding: 28px;
+    border-radius: 18px;
+    background: #f8faf8;
+    border: 1px solid #dce8df;
+}
+
+.result-card h2 {
+    text-align: center;
+    color: #14532d;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+/* ================================
+   Result Grid
+   ================================ */
+
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* ================================
+   Individual Result Blocks
+   ================================ */
+
+.result-section {
+    background: #ffffff;
+    border: 1px solid #e2e8e2;
+    border-radius: 12px;
+    padding: 17px 18px;
+    min-height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: 0.2s ease;
+}
+
+.result-section:hover {
+    border-color: #bbd6c1;
+}
+
+/* Full-width result sections */
+
+.result-section:nth-child(4),
+.result-section:nth-child(6),
+.result-section:nth-child(7) {
+    grid-column: span 2;
+}
+
+/* ================================
+   Result Heading
+   ================================ */
+
+.result-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: #166534;
+}
+
+.result-title strong {
+    font-weight: 700;
+}
+
+/* ================================
+   Result Text
+   ================================ */
+
+.result-content {
+    color: #374151;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+/* ================================
+   Image Preview
+   ================================ */
+
+.image-preview {
+    margin: 18px auto;
+    text-align: center;
+}
+
+.image-preview img {
+    width: 220px;
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+/* ================================
+   Clear Button
+   ================================ */
+
+.clear-button {
+    display: block;
+    width: auto;
+    margin: 18px auto 0;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #555555;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background: #444444;
+    transform: translateY(-1px);
+}
+
+/* ================================
+   About Section
+   ================================ */
+
+.about {
+    max-width: 1000px;
+    margin: 0 auto 70px;
+    padding: 0 20px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #14532d;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #166534;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: #14532d;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* ================================
+   Responsive Design - Tablet
+   ================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 14px 5%;
+    }
+
+    .hero {
+        padding: 55px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .analyzer-card {
+        width: 94%;
+        padding: 24px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-section:nth-child(4),
+    .result-section:nth-child(6),
+    .result-section:nth-child(7) {
+        grid-column: span 1;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================================
+   Responsive Design - Mobile
+   ================================ */
+
+@media (max-width: 480px) {
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .analyzer-card {
+        padding: 18px;
+    }
+
+    .result-card {
+        padding: 18px;
+    }
+
+    .result-section {
+        padding: 15px;
+    }
+
+    .result-content {
+        font-size: 15px;
+    }
+
+    .clear-button {
+        width: auto;
+    }
+}
